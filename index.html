@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Majestic Villa Lidija</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <img src="assets/logo.png" alt="Irundo logo" class="logo" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#info">Info</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#checkin">Check-in</a>
+      <a href="#appliances">Appliances</a>
+      <a href="#rules">Rules</a>
+      <a href="#recommendations">Recommendations</a>
+    </nav>
+    <div class="lang-toggle">
+      <button onclick="switchLang('en')">EN</button> | 
+      <button onclick="switchLang('hr')">HR</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 data-en="Majestic Villa Lidija" data-hr="Vila Lidija Dubrovnik">Majestic Villa Lidija</h1>
+    <p data-en="Dubrovnik, Croatia" data-hr="Dubrovnik, Hrvatska">Dubrovnik, Croatia</p>
+    <p data-en="Check-in: 16:00 | Check-out: 10:00" data-hr="Prijava: 16:00 | Odjava: 10:00">Check-in: 16:00 | Check-out: 10:00</p>
+  </section>
+
+  <section id="info" class="cards">
+    <div class="card">
+      <h3>📶 Wi-Fi</h3>
+      <p><strong>Villa Lidija</strong><br/>Password: lidija2023</p>
+    </div>
+    <div class="card">
+      <h3>📞 Contact</h3>
+      <p>24/7 via WhatsApp</p>
+      <a href="https://wa.me/1234567890" class="btn">Message Host</a>
+    </div>
+    <div class="card">
+      <h3>📍 Location</h3>
+      <p>Near Dubrovnik Old Town</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.8771360029036!2d18.094423715569306!3d42.64008117916706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134c0b3fb7916f41%3A0x9b84fcfb12ebedb2!2sDubrovnik%20Old%20Town!5e0!3m2!1sen!2shr!4v1713461600000!5m2!1sen!2shr" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="card">
+      <h3>🕒 Check-in/out</h3>
+      <p>From 16:00 / Until 10:00</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About the Villa</h2>
+    <div class="about-box">
+      <p>
+        Welcome to Majestic Villa Lidija, your luxury retreat in the heart of Dubrovnik. Enjoy a private terrace, sea view, infinity pool, and direct access to historic city charm.
+      </p>
+      <img src="assets/villa1.jpg" alt="Villa preview"/>
+    </div>
+  </section>
+
+  <section id="amenities">
+    <h2>Villa Amenities</h2>
+    <div class="grid">
+      <div class="card">🏊 Infinity Pool<br/><small>Heated, 91m²</small></div>
+      <div class="card">🧖 Luxury Spa<br/><small>Jacuzzi, sauna</small></div>
+      <div class="card">🍷 Wine Cellar<br/><small>With tasting room</small></div>
+      <div class="card">📶 Fast Wi-Fi<br/><small>Throughout the villa</small></div>
+    </div>
+  </section>
+
+  <section id="recommendations">
+    <h2>Recommended Experiences</h2>
+    <div class="gallery">
+      <img src="assets/dubrovnik1.jpg" alt="Dubrovnik 1"/>
+      <img src="assets/dubrovnik2.jpg" alt="Dubrovnik 2"/>
+      <img src="assets/dubrovnik3.jpg" alt="Dubrovnik 3"/>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Villa Lidija. Hosted by Irundo.</p>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #faf8f5;
+  color: #333;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 999;
+}
+.logo {
+  height: 40px;
+}
+.navbar nav a {
+  margin: 0 0.5rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+.lang-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #e8e5e0;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+}
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  width: 220px;
+  text-align: center;
+}
+.card iframe {
+  margin-top: 0.5rem;
+  border-radius: 8px;
+}
+.btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  background: #c9b69b;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.about-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
+.about-box img {
+  width: 300px;
+  border-radius: 12px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+.gallery {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+}
+.gallery img {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #f4f0eb;
+  font-size: 0.9rem;
+}
